@@ -13,7 +13,7 @@ enum CameraError {
     case invalidScannerValue
 }
 
-protocol ScannerVCDelegate: class {
+protocol ScannerVCDelegate: AnyObject {
     func didFind(barcode: String)
     func didSurface(error: CameraError)
 }
